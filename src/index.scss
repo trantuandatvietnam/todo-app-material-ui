@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.MuiList-root::-webkit-scrollbar {
+    width: 4px;
+    background-color: #3b82f680;
+}
+
+.MuiList-root::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #1976d2;
+}
+
+.MuiAlert-root {
+    animation: downAnimation linear .2s;
+}
+
+@keyframes downAnimation {
+    from {
+        transform: translateY(-100%)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
